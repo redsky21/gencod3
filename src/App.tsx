@@ -4,7 +4,7 @@ import Hello from '@/pages/Hello';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Header } from '@/layouts/Header';
 import PageRouter from '@/layouts/PageRouter';
-import { Box, GlobalStyles, makeStyles, ThemeProvider } from '@mui/material';
+import { Box, Container, GlobalStyles, Grid, makeStyles, ThemeProvider } from '@mui/material';
 import { createTheme } from '@mui/material/styles';
 import { green } from '@mui/material/colors';
 
@@ -24,32 +24,39 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <BrowserRouter>
-        <div>
-          <GlobalStyles
-            styles={{
-              // body: { backgroundColor: 'darkslategray' },
-              body: { margin: '0px' },
-            }}
-          />
+      <Container fixed>
+        <BrowserRouter>
+          <div>
+            <GlobalStyles
+              styles={{
+                // body: { backgroundColor: 'darkslategray' },
+                body: { margin: '0px' },
+              }}
+            />
 
-          {/*<Header styles={{ backgroundColor: 'red' }} />*/}
-          <div style={{ backgroundColor: '#121212', height: 55 }}>11</div>
-          <div style={{ backgroundColor: 'darkslategray', height: 40 }}>submenu</div>
-          <div
-            style={{
-              backgroundColor: '#339999',
-              color: 'white',
-              height: 'calc(100% - 95px)',
-            }}
-          >
-            <Routes>
-              <Route path="/" element={<Hello />} />
-              <Route path="/*" element={<PageRouter />} />
-            </Routes>
+            {/*<Header styles={{ backgroundColor: 'red' }} />*/}
+            <div style={{ backgroundColor: '#474444', height: 55 }}>11</div>
+            <Grid container>
+              <Grid item xs={2}>
+                <div>nav</div>
+              </Grid>
+              <Grid item xs={10}>
+                <div
+                  style={{
+                    backgroundColor: '#339999',
+                    color: 'white',
+                  }}
+                >
+                  <Routes>
+                    <Route path="/" element={<Hello />} />
+                    <Route path="/*" element={<PageRouter />} />
+                  </Routes>
+                </div>
+              </Grid>
+            </Grid>
           </div>
-        </div>
-      </BrowserRouter>
+        </BrowserRouter>
+      </Container>
     </ThemeProvider>
   );
 }
