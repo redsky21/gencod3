@@ -24,7 +24,7 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Container fixed>
+      <Container fixed style={{ padding: '0px' }}>
         <BrowserRouter>
           <div>
             <GlobalStyles
