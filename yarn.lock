@@ -2506,6 +2506,11 @@ adjust-sourcemap-loader@^4.0.0:
     loader-utils "^2.0.0"
     regex-parser "^2.2.11"
 
+ag-grid-enterprise@^27.1.0:
+  version "27.1.0"
+  resolved "https://registry.yarnpkg.com/ag-grid-enterprise/-/ag-grid-enterprise-27.1.0.tgz#f04ed7aeaa5d79893519547e7b757e4478fb6140"
+  integrity sha512-yvMiReqwDBb9xkLI9ArktDNVfaidfYNk7YP7avTzTV1WSMM/HmP7DgUi509P3FSk9yxfxU0f9+z/yTubLSqCCQ==
+
 agent-base@6:
   version "6.0.2"
   resolved "https://registry.yarnpkg.com/agent-base/-/agent-base-6.0.2.tgz#49fff58577cfee3f37176feab4c22e00f86d7f77"
@@ -6183,6 +6188,11 @@ mkdirp@^0.5.5, mkdirp@~0.5.1:
   integrity sha512-FP+p8RB8OWpF3YZBCrP5gtADmtXApB5AMLn+vdyA+PyxCjrCs00mjyUozssO33cwDeT3wNGdLxJ5M//YqtHAJw==
   dependencies:
     minimist "^1.2.6"
+
+mobx-react-lite@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/mobx-react-lite/-/mobx-react-lite-3.3.0.tgz#7174e807201943beff6f9d3701492314c9fc0db3"
+  integrity sha512-U/kMSFtV/bNVgY01FuiGWpRkaQVHozBq5CEBZltFvPt4FcV111hEWkgwqVg9GPPZSEuEdV438PEz8mk8mKpYlA==
 
 ms@2.0.0:
   version "2.0.0"

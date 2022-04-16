@@ -1,16 +1,21 @@
-import { Button } from '@mui/material';
+import { AppBar, Box, Button, IconButton, Toolbar, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
+import MenuIcon from '@mui/icons-material/Menu';
 
 export const Header = () => {
   return (
-    <div>
-      <Button color="primary">dd</Button>
-      <button>가</button>
-      <li>
-        <Link to="/page1">go page1</Link>
-      </li>
-      <button>나</button>
-      <button>다</button>
-    </div>
+    <Box sx={{ flexGrow: 1 }}>
+      <AppBar position="static">
+        <Toolbar>
+          <IconButton size="large" edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
+            <MenuIcon />
+          </IconButton>
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            Code Gen
+          </Typography>
+          <Button color="inherit">v1.0</Button>
+        </Toolbar>
+      </AppBar>
+    </Box>
   );
 };

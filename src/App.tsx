@@ -7,6 +7,7 @@ import PageRouter from '@/layouts/PageRouter';
 import { Box, Container, GlobalStyles, Grid, makeStyles, ThemeProvider } from '@mui/material';
 import { createTheme } from '@mui/material/styles';
 import { green } from '@mui/material/colors';
+import { LeftMenu } from '@/layouts/LeftMenu';
 
 function App() {
   const theme = createTheme({
@@ -24,7 +25,7 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Container fixed style={{ padding: '0px' }}>
+      <Container style={{ padding: '0px' }}>
         <BrowserRouter>
           <div>
             <GlobalStyles
@@ -35,10 +36,11 @@ function App() {
             />
 
             {/*<Header styles={{ backgroundColor: 'red' }} />*/}
-            <div style={{ backgroundColor: '#474444', height: 55 }}>11</div>
+            {/*<div style={{ backgroundColor: '#474444', height: 55 }}>11</div>*/}
+            <Header />
             <Grid container>
               <Grid item xs={2}>
-                <div>nav</div>
+                <LeftMenu />
               </Grid>
               <Grid item xs={10}>
                 <div
