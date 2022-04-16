@@ -13,7 +13,7 @@ import Cloud from '@mui/icons-material/Cloud';
 
 export const LeftMenu = () => {
   return (
-    <Paper sx={{ borderRadius: '0' }}>
+    <Paper sx={{ borderRadius: '0', height: '100%' }}>
       <MenuList>
         <MenuItem>
           <ListItemIcon>

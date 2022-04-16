@@ -25,9 +25,9 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Container style={{ padding: '0px' }}>
+      <Container style={{ padding: '0px', height: '100%' }}>
         <BrowserRouter>
-          <div>
+          <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
             <GlobalStyles
               styles={{
                 // body: { backgroundColor: 'darkslategray' },
