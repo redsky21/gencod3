@@ -8,6 +8,7 @@ import { Box, Container, GlobalStyles, Grid, makeStyles, ThemeProvider } from '@
 import { createTheme } from '@mui/material/styles';
 import { green } from '@mui/material/colors';
 import { LeftMenu } from '@/layouts/LeftMenu';
+import { MainPageLayout } from './layouts/MainPageLayout';
 
 function App() {
   const theme = createTheme({
@@ -27,37 +28,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <Container style={{ padding: '0px', height: '100%' }}>
         <BrowserRouter>
-          <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
-            {/* <div> */}
-            <GlobalStyles
-              styles={{
-                // body: { backgroundColor: 'darkslategray' },
-                body: { margin: '0px' },
-              }}
-            />
-
-            {/*<Header styles={{ backgroundColor: 'red' }} />*/}
-            {/*<div style={{ backgroundColor: '#474444', height: 55 }}>11</div>*/}
-            <Header />
-            <Grid container style={{ height: '100%' }}>
-              <Grid item xs={2}>
-                <LeftMenu />
-              </Grid>
-              <Grid item xs={10}>
-                <div
-                  style={{
-                    backgroundColor: '#339999',
-                    color: 'white',
-                  }}
-                >
-                  <Routes>
-                    <Route path="/" element={<Hello />} />
-                    <Route path="/*" element={<PageRouter />} />
-                  </Routes>
-                </div>
-              </Grid>
-            </Grid>
-          </div>
+          <MainPageLayout></MainPageLayout>
         </BrowserRouter>
       </Container>
     </ThemeProvider>
