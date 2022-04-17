@@ -53,8 +53,9 @@ export const MainPageLayout = observer(() => {
         <Grid item xs={pageLayoutStore.menuOpen ? 12 : 14}>
           <div
             style={{
-              backgroundColor: '#339999',
+              backgroundColor: '#3b3939',
               color: 'white',
+              height: '100%',
             }}
           >
             <Routes>

@@ -10,38 +10,40 @@ import ContentCut from '@mui/icons-material/ContentCut';
 import ContentCopy from '@mui/icons-material/ContentCopy';
 import ContentPaste from '@mui/icons-material/ContentPaste';
 import Cloud from '@mui/icons-material/Cloud';
+import { Link } from 'react-router-dom';
 
 export const LeftMenu = () => {
+  const menuLink = () => {
+    return (
+      <Link to="/Home" style={{ textDecoration: 'none', display: 'block' }}>
+        gggg
+      </Link>
+    );
+  };
   return (
     <Paper sx={{ borderRadius: '0', height: '100%', minWidth: '100%' }}>
       <MenuList>
         <MenuItem>
           <ListItemIcon>
-            <ContentCut fontSize="small" />
+            <ContentPaste fontSize="small" />
           </ListItemIcon>
-          <ListItemText>Cut</ListItemText>
-          <Typography variant="body2" color="text.secondary">
-            ⌘X
-          </Typography>
+          <ListItemText>Template</ListItemText>
         </MenuItem>
+        <Link to="/Home" style={{ textDecoration: 'none', display: 'block', color: 'wheat' }}>
+          <MenuItem>
+            <ListItemIcon>
+              <ContentCut fontSize="small" />
+            </ListItemIcon>
+            <ListItemText>Generate</ListItemText>
+          </MenuItem>
+        </Link>
         <MenuItem>
           <ListItemIcon>
             <ContentCopy fontSize="small" />
           </ListItemIcon>
-          <ListItemText>Copy</ListItemText>
-          <Typography variant="body2" color="text.secondary">
-            ⌘C
-          </Typography>
+          <ListItemText>History</ListItemText>
         </MenuItem>
-        <MenuItem>
-          <ListItemIcon>
-            <ContentPaste fontSize="small" />
-          </ListItemIcon>
-          <ListItemText>Paste</ListItemText>
-          <Typography variant="body2" color="text.secondary">
-            ⌘V
-          </Typography>
-        </MenuItem>
+
         <Divider />
         <MenuItem>
           <ListItemIcon>

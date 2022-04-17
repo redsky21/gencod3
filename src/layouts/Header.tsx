@@ -23,7 +23,9 @@ export const Header = () => {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Code Gen
+            <Link to="/" style={{ textDecoration: 'none', display: 'block', color: 'wheat' }}>
+              Code Gen {pageLayoutStore.menuOpen + ''}
+            </Link>
           </Typography>
           <Button color="inherit">v1.0</Button>
         </Toolbar>
