@@ -28,6 +28,7 @@ function App() {
       <Container style={{ padding: '0px', height: '100%' }}>
         <BrowserRouter>
           <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
+            {/* <div> */}
             <GlobalStyles
               styles={{
                 // body: { backgroundColor: 'darkslategray' },
@@ -38,7 +39,7 @@ function App() {
             {/*<Header styles={{ backgroundColor: 'red' }} />*/}
             {/*<div style={{ backgroundColor: '#474444', height: 55 }}>11</div>*/}
             <Header />
-            <Grid container>
+            <Grid container style={{ height: '100%' }}>
               <Grid item xs={2}>
                 <LeftMenu />
               </Grid>
