@@ -41,10 +41,6 @@
       <option name="USE_GENERAL_STYLE" value="false" />
       <option name="DISABLE_FORMATTING" value="true" />
     </H2CodeStyleSettings>
-    <H2CodeStyleSettings version="6">
-      <option name="USE_GENERAL_STYLE" value="false" />
-      <option name="DISABLE_FORMATTING" value="true" />
-    </H2CodeStyleSettings>
     <HTMLCodeStyleSettings>
       <option name="HTML_SPACE_INSIDE_EMPTY_TAG" value="true" />
       <option name="HTML_QUOTE_STYLE" value="Single" />
