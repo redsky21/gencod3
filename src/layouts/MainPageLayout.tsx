@@ -16,6 +16,10 @@ const useStyles = makeStyles((theme: Theme) =>
     wrap: {
       height: '100%',
     },
+    displayBlock: {
+      display: 'block',
+      width: '100% !important',
+    },
   }),
 );
 
@@ -24,7 +28,7 @@ export const MainPageLayout = observer(() => {
   const classes = useStyles() as any;
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', height: '100%', width: '100%' }}>
       {/* <div> */}
       <GlobalStyles
         styles={{
@@ -39,12 +43,14 @@ export const MainPageLayout = observer(() => {
           <Collapse
             in={pageLayoutStore.menuOpen}
             // style={{ width: '100%' }}
-            sx={{ height: '100%' }}
+            sx={{ width: '100%', height: '100%' }}
             timeout="auto"
             unmountOnExit
             // className={clsx({
-            //   'MuiCollapse-wrapper': 'height:"100%"',
+            //   'MuiCollapse-wrapper': 'display:"block"',
             // })}
+            // classes={{ 'MuiCollapse-wrapperInner': 'display:block' }}
+            classes={{ wrapperInner: classes.displayBlock }}
             orientation="horizontal"
           >
             <LeftMenu />

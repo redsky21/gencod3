@@ -23,13 +23,7 @@ export const LeftMenu = () => {
   return (
     <Paper sx={{ borderRadius: '0', height: '100%', minWidth: '100%' }}>
       <MenuList>
-        <MenuItem>
-          <ListItemIcon>
-            <ContentPaste fontSize="small" />
-          </ListItemIcon>
-          <ListItemText>Template</ListItemText>
-        </MenuItem>
-        <Link to="/Home" style={{ textDecoration: 'none', display: 'block', color: 'wheat' }}>
+        <Link to="/GenPage" style={{ textDecoration: 'none', display: 'block', color: 'wheat' }}>
           <MenuItem>
             <ListItemIcon>
               <ContentCut fontSize="small" />
@@ -44,13 +38,20 @@ export const LeftMenu = () => {
           <ListItemText>History</ListItemText>
         </MenuItem>
 
-        <Divider />
+        <MenuItem>
+          <ListItemIcon>
+            <ContentPaste fontSize="small" />
+          </ListItemIcon>
+          <ListItemText>Template</ListItemText>
+        </MenuItem>
+
+        {/* <Divider />
         <MenuItem>
           <ListItemIcon>
             <Cloud fontSize="small" />
           </ListItemIcon>
           <ListItemText>Web Clipboard</ListItemText>
-        </MenuItem>
+        </MenuItem> */}
       </MenuList>
     </Paper>
   );
