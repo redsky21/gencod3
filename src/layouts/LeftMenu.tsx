@@ -31,6 +31,25 @@ export const LeftMenu = () => {
             <ListItemText>Generate</ListItemText>
           </MenuItem>
         </Link>
+        <Link
+          to="/gerp/TepGenMasterInfo"
+          style={{ textDecoration: 'none', display: 'block', color: 'rgb(144 255 168)' }}
+        >
+          <MenuItem>
+            <ListItemIcon>
+              <Cloud fontSize="small" />
+            </ListItemIcon>
+            <ListItemText>TepGenMasterInfo</ListItemText>
+          </MenuItem>
+        </Link>
+        <Link
+          to="/gerp/TepGenMasterInfoList"
+          style={{ textDecoration: 'none', display: 'block', color: 'rgb(144 255 168)' }}
+        >
+          <MenuItem>
+            <ListItemText>TepGenMasterInfoList</ListItemText>
+          </MenuItem>
+        </Link>
         <MenuItem>
           <ListItemIcon>
             <ContentCopy fontSize="small" />
