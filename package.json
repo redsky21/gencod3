@@ -22,11 +22,13 @@
     "ag-grid-react": "^27.2.1",
     "axios": "^0.27.2",
     "clsx": "^1.1.1",
+    "file-saver": "^2.0.5",
     "history": "5",
     "lodash": "^4.17.21",
     "mobx": "^6.5.0",
     "mobx-react-lite": "^3.3.0",
     "react": "^18.0.0",
+    "react-copy-to-clipboard": "^5.1.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "6",
     "react-scripts": "5.0.0",
@@ -59,7 +61,9 @@
     ]
   },
   "devDependencies": {
+    "@types/file-saver": "^2.0.5",
     "@types/lodash": "^4.14.182",
+    "@types/react-copy-to-clipboard": "^5.0.2",
     "@typescript-eslint/eslint-plugin": "^5.18.0",
     "@typescript-eslint/parser": "^5.18.0",
     "craco-alias": "^3.0.1",

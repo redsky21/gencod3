@@ -71,7 +71,7 @@ const TepGenMasterInfoList = () => {
           Show list
         </Button>
       </Box>
-      <div className="ag-theme-alpine-dark" style={{ height: 450, width: '100%' }}>
+      <div style={{ height: 450, width: '100%' }}>
         <BaseGrid<ITepGenMasterInfo>
           columnDefs={columnDefs}
           rowData={rowData}

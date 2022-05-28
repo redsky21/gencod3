@@ -9,10 +9,25 @@ class GenerateService {
     return Client.get<Array<ITepGenMasterInfo>>(GenerateService.endpoint);
   };
 
-  public static createListOfTepGenMasterInfo = function (
+  public static createListOfTepGenMasterInfo = function <T = any>(
     params: Array<ITepGenMasterInfo>,
-  ): TBaseResponse<any> {
+  ): TBaseResponse<T> {
     return Client.post(GenerateService.endpoint, params);
+  };
+
+  public static deleteListOfTepGenMasterInfo = function <T = any>(
+    params: Array<number | null | undefined>,
+  ): TBaseResponse<T> {
+    return Client.delete(GenerateService.endpoint, {
+      headers: {},
+      data: params,
+    });
+  };
+
+  public static getEOStringAsZip = function <T = any>(param: ITepGenMasterInfo): TBaseResponse<T> {
+    return Client.post('/gerp/gen/getEoStringAsZip', param, {
+      responseType: 'blob',
+    });
   };
 }
 

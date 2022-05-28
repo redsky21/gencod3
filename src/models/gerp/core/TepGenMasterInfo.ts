@@ -1,4 +1,5 @@
 import _merge from 'lodash/merge';
+import _omit from 'lodash/omit';
 
 export interface ITepGenMasterInfo {
   id?: string | null;
@@ -42,7 +43,11 @@ export default class TepGenMasterInfoModel {
     controllerSaveMethodSeq: null,
   };
 
-  public static fromJson(model: ITepGenMasterInfo): ITepGenMasterInfo {
-    return _merge({ ...TepGenMasterInfoModel.defaultValues }, { id: model.rowKey }, { ...model });
+  public static fromJson(model: ITepGenMasterInfo, omit: string[] = []): ITepGenMasterInfo {
+    return _merge(
+      { ...TepGenMasterInfoModel.defaultValues },
+      { id: model.rowKey },
+      _omit({ ...model }, [...omit]),
+    );
   }
 }
