@@ -26,7 +26,7 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Container style={{ padding: '0px', height: '100%' }}>
+      <Container maxWidth={false} style={{ padding: '0px', height: '100%' }}>
         <BrowserRouter>
           <MainPageLayout></MainPageLayout>
         </BrowserRouter>
